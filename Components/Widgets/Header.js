@@ -1,6 +1,7 @@
 /* @flow */
 'use strict';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 import Platform from '../../Utils/platform';
 import NativeBaseComponent from '../Base/NativeBaseComponent';
@@ -15,9 +16,9 @@ import _ from 'lodash';
 export default class Header extends NativeBaseComponent {
 
     propTypes: {
-        searchBar : React.PropTypes.bool,
-        rounded : React.PropTypes.bool,
-        style : React.PropTypes.object
+        searchBar : PropTypes.bool,
+        rounded : PropTypes.bool,
+        style : PropTypes.object
     }
 
     getInitialStyle() {

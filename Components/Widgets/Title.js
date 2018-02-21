@@ -1,6 +1,7 @@
 /* @flow */
 'use strict';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 import Platform from '../../Utils/platform';
 import NativeBaseComponent from '../Base/NativeBaseComponent';
@@ -12,7 +13,7 @@ import computeProps from '../../Utils/computeProps';
 export default class Title extends NativeBaseComponent {
 
 	propTypes: {
-        style : React.PropTypes.object
+        style : PropTypes.object
     }
 
 	prepareRootProps() {

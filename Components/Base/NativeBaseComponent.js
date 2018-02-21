@@ -1,23 +1,24 @@
 /* @flow */
 'use strict';
 
+import PropTypes from 'prop-types';
 import React, {Component} from 'react';
 import lightTheme from '../Themes/light';
 
 export default class NativeBaseComponent extends Component {
 	static contextTypes = {
-		theme: React.PropTypes.object,
-		foregroundColor: React.PropTypes.string
+		theme: PropTypes.object,
+		foregroundColor: PropTypes.string
 	}
 
 	static propTypes = {
-		theme: React.PropTypes.object,
-		foregroundColor: React.PropTypes.string
+		theme: PropTypes.object,
+		foregroundColor: PropTypes.string
 	}
 
 	static childContextTypes = {
-		theme: React.PropTypes.object,
-		foregroundColor: React.PropTypes.string
+		theme: PropTypes.object,
+		foregroundColor: PropTypes.string
 	}
 
 	getChildContext() {

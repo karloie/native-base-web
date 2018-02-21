@@ -1,6 +1,7 @@
 /* @flow */
 'use strict';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 import {Image} from 'react-native';
 import NativeBaseComponent from '../Base/NativeBaseComponent';
@@ -15,9 +16,9 @@ import _ from 'lodash';
 export default class CardItemNB extends NativeBaseComponent {
 
     propTypes: {
-        style : React.PropTypes.object,
-        header : React.PropTypes.bool,
-        cardBody : React.PropTypes.bool
+        style : PropTypes.object,
+        header : PropTypes.bool,
+        cardBody : PropTypes.bool
     }
 
     getInitialStyle() {

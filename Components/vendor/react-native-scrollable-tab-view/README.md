@@ -94,9 +94,9 @@ var styles = StyleSheet.create({
 
 var CustomTabBar = React.createClass({
   propTypes: {
-    goToPage: React.PropTypes.func,
-    activeTab: React.PropTypes.number,
-    tabs: React.PropTypes.array
+    goToPage: PropTypes.func,
+    activeTab: PropTypes.number,
+    tabs: PropTypes.array
   },
 
   renderTabOption(name, page) {

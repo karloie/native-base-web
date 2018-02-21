@@ -1,6 +1,7 @@
 /* @flow */
 'use strict';
 
+import PropTypes from 'prop-types';
 import React from 'react';
 import NativeBaseComponent from '../Base/NativeBaseComponent';
 import computeProps from '../../Utils/computeProps';
@@ -9,8 +10,8 @@ import { ScrollView } from 'react-native';
 export default class Content extends NativeBaseComponent {
 
 	propTypes: {
-        padder : React.PropTypes.bool,
-		style : React.PropTypes.object
+        padder : PropTypes.bool,
+		style : PropTypes.object
     }
 
 	prepareRootProps() {

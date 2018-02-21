@@ -1,5 +1,7 @@
 /* @flow */
 'use strict';
+
+import PropTypes from 'prop-types';
 import React from 'react';
 import {View, TextInput} from 'react-native';
 import NativeBaseComponent from '../Base/NativeBaseComponent';
@@ -8,7 +10,7 @@ import computeProps from '../../Utils/computeProps';
 export default class Input extends NativeBaseComponent {
 
     propTypes: {
-        style : React.PropTypes.object
+        style : PropTypes.object
     }
 
     getInitialStyle() {
